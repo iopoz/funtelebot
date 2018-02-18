@@ -76,13 +76,13 @@ def main():
                 if last_chat_id not in user_dict.keys():
                     user_dict[last_chat_id] = today
                     if user_dict[last_chat_id] == now.day and 6 <= hour < 12:
-                        greet_bot.send_message(last_chat_id, 'Доброе утро, %s' % last_chat_name)
+                        greet_bot.send_message(last_chat_id, u'Доброе утро, %s' % last_chat_name)
 
                     elif user_dict[last_chat_id] == now.day and 12 <= hour < 17:
-                        greet_bot.send_message(last_chat_id, 'Добрый день, %s' % last_chat_name)
+                        greet_bot.send_message(last_chat_id, u'Добрый день, %s' % last_chat_name)
 
                     elif today == now.day and 17 <= hour < 23:
-                        greet_bot.send_message(last_chat_id, 'Добрый вечер, %s' % last_chat_name)
+                        greet_bot.send_message(last_chat_id, u'Добрый вечер, %s' % last_chat_name)
 
                 fun_res = fun.get_fun()
 
