@@ -10,7 +10,7 @@ from fun import FunStoryGenerate
 class BotHandler:
     def __init__(self, token):
         self.token = token
-        self.url = 'https://api.telegram.org/bot%s/' % token  # 400389243:AAE3bbTO0DtzaJHFl791rgKlHuV3_vO8P9w
+        self.url = 'https://api.telegram.org/bot%s/' % token
 
     @property
     def key_board(self):
